@@ -15,8 +15,8 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     let master = &args[1];
 
-    if master == "linus"{
-        let num = rand::thread_rng().gen_range(0..5);
+    if master == "help"{
+        let num = rand::thread_rng().gen_range(0..4);
         println!("");
         match num {
             0 => println!("“Talk is cheap. Show me the code.” \n ― Linus Torvalds"),
