@@ -1,19 +1,16 @@
 /*
 When I write "linus" on the terminal it should return 
 some Linus Torvalds' quote.(At least 10 quotes)
-
 Crates:
 1 - rand
-2 - clap 
 */
 
 use rand::Rng;
 use std::env;
-//use std::fs;
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    let master = &args[1];
+    let args: Vec<String> = env::args().collect(); // get input from cli - help
+    let master = &args[1]; 
 
     if master == "help"{
         let num = rand::thread_rng().gen_range(0..4);
@@ -28,10 +25,4 @@ fn main() {
         }
         println!("");
     }
-
-
-
-
-
-    
 }
