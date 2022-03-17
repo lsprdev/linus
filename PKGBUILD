@@ -1,6 +1,6 @@
 # Maintainer: OGabrielPereira ogabrielpereira@pm.me
 pkgname=linus-coach
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=1
 pkgdesc="Are you sad and unmotivated to code? linus-coach can help you with that."
 arch=("x86_64")
@@ -20,4 +20,5 @@ package() {
 	cd "$pkgname"
 	install -Dm755 target/debug/linus $pkgdir/usr/bin/linus
 	install -Dm644 LICENSE $pkgdir/usr/share/$pkgname/LICENSE
+	install -Dm644 linus.1 $pkdir/usr/share/man/man1/linus.1
 }
