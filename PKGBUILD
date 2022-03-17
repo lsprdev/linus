@@ -20,5 +20,5 @@ package() {
 	cd "$pkgname"
 	install -Dm755 target/debug/linus $pkgdir/usr/bin/linus
 	install -Dm644 LICENSE $pkgdir/usr/share/$pkgname/LICENSE
-	install -Dm644 linus.1 $pkdir/usr/share/man/man1/linus.1
+	install -Dm644 linus.1 $pkgdir/usr/share/man/man1/linus.1
 }
