@@ -7,4 +7,4 @@ Arch Linux/Arch based Linux distributions users can download the `PKGBUILD`, run
 
 # Use
 
-`$ linus help`
+`$ linus`
