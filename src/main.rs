@@ -22,11 +22,10 @@ fn main() {
     
     let rnm = rand::thread_rng().gen_range(1..6);
 
-    println!("\n");
     if master.trim() == "help" {
         quotes::run(rnm);
     } else {
         help::run();
     }
-    println!("\n");
+
 }
