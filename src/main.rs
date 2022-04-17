@@ -1,28 +1,32 @@
-/*
-When I write "linus" on the terminal it should return 
-some Linus Torvalds' quote.(At least 10 quotes)
-Crates:
-1 - rand
-*/
-
 use rand::Rng;
 use std::env;
+use std::process;
+mod quotes;
+mod help;
+
+/*
+ *   author Gabriel ogabrielpereira@pm.me
+ *   version 1.0.0
+ *   since Mar 7, 2022
+ */
 
 fn main() {
     let args: Vec<String> = env::args().collect(); // get input from cli - help
-    let master = &args[1]; 
-
-    if master == "help"{
-        let num = rand::thread_rng().gen_range(0..4);
-        println!("");
-        match num {
-            0 => println!("“Talk is cheap. Show me the code.” \n ― Linus Torvalds"),
-            1 => println!("“Bad programmers worry about the code. Good programmers worry \n about data structures and their relationships.” \n ― Linus Torvalds"),
-            2 => println!("“Intelligence is the ability to avoid doing work, yet getting the \n work done.” \n ― Linus Torvalds"),
-            3 => println!("“I like offending people, because I think people who get offended should \n be offended.” \n ― Linus Torvalds"),
-            4 => println!("“Only wimps use tape backup. REAL men just upload their important \n stuff on ftp and let the rest of the world mirror it.” \n ― Linus Torvalds"),
-            _ => println!("Try again!"),
-        }
-        println!("");
+    
+    if args.len() != 2 {
+        help::run();
+        process::exit(1);
     }
+
+    let master = &args[1];
+    
+    let rnm = rand::thread_rng().gen_range(1..6);
+
+    println!("\n");
+    if master.trim() == "help" {
+        quotes::run(rnm);
+    } else {
+        help::run();
+    }
+    println!("\n");
 }
