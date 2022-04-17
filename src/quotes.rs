@@ -1,5 +1,6 @@
 
 pub fn run(rn: u8) {
+//rn(random number)
 
     match rn {
         1 => println!("\n“Talk is cheap. Show me the code.” \n ― Linus Torvalds\n"),

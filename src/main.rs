@@ -31,18 +31,19 @@ mod version;
 fn main() {
     let args: Vec<String> = env::args().collect(); // get input from cli - help
 
-    if args.len() != 2 {
-
-    let rnm = rand::thread_rng().gen_range(1..6);
-    quotes::run(rnm);
-    } else if args[1] == "--h" || args[1] == "--help" {
-
+    if args.len() == 1 {
+    let rnm = rand::thread_rng().gen_range(1..6); // It gets a random number
+    //rnm(random number main)
+    
+    quotes::run(rnm); 
+    } 
+    else if args[1] == "--h" || args[1] == "--help" {
         help::run();
-    } else if args[1] == "--v" || args[1] == "--version" {
-
+    } 
+    else if args[1] == "--v" || args[1] == "--version" {
         version::run();
-    } else {
-
+    } 
+    else {
         help::run();
     }
 
