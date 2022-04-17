@@ -1,11 +1,11 @@
 # Maintainer: OGabrielPereira ogabrielpereira@pm.me
-pkgname=linus-coach
+pkgname=linus
 pkgver=1.0.1
 pkgrel=1
-pkgdesc="Are you sad and unmotivated to code? linus-coach can help you with that."
+pkgdesc="Are you sad and unmotivated to code? linus can help you with that."
 arch=("x86_64")
-url="https://www.github.com/OGabrielPereira/linus-coach"
-license=('CC-O-1.0')
+url="https://www.github.com/OGabrielPereira/linus"
+license=('GPL-3.0')
 makedepends=(rust)
 provides=(linus)
 source=("git+$url")

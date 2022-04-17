@@ -4,5 +4,5 @@ pub fn run(){
     println!("Copyright (C) 2022  Gabriel L. Pereira.");
     println!("This program is free software: you can redistribute it and/or modify.");
     println!("This program comes with ABSOLUTELY NO WARRANTY.");
-    println!("\nWritten by Gabriel L. Pereira");
+    println!("\nWritten by Gabriel L. Pereira <ogabrielpereira@pm.me>");
 }
