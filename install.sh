@@ -1,1 +1,0 @@
-cp ./target/debug/linus usr/bin/linus
