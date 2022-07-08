@@ -27,7 +27,7 @@ mod version;
  *   version 0.1.0
  *   since Mar 7, 2022
  */
-
+// Rewrite it with clap
 fn main() {
     let args: Vec<String> = env::args().collect(); // get input from cli - help
 
