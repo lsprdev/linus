@@ -23,7 +23,7 @@ mod version;
  */
 
 /*
- *   author Gabriel L. Pereira ogabrielpereira@pm.me
+ *   author Gabriel L. Pereira aka Ven <ogabrielpereira@pm.me>
  *   version 0.1.0
  *   since Mar 7, 2022
  */
